@@ -1,5 +1,15 @@
 # 조운전 · 창술 연무장
 
+## 오버로드 원본 리소스 연구실
+
+처음 설치할 때는 [실행 리소스 릴리스](https://github.com/rooneypark/zhao_yun/releases/tag/overlord-assets-v1)에서 **overlord-maps.zip**과 **overlord-motion.zip**을 모두 받아 이 저장소의 최상위 폴더에 압축을 풉니다. 두 ZIP은 같은 `public/overlord/` 폴더 아래에 서로 다른 파일을 추가합니다. 압축을 푼 뒤 `run-overlord.bat`를 실행하세요.
+
+`run-overlord.bat`를 실행하거나 개발 서버의 `/overlord.html`을 여세요. 맵의 원본 메시·지형·배치와 캐릭터의 원본 스킨·애니메이션을 검사하고, 장면 편집과 모션 재생 목록을 저장할 수 있습니다. 화면과 확보 범위는 [연구실 안내](src/overlord/README.md)에 설명되어 있습니다.
+
+원본 설치 APK와 분할 리소스 팩은 `reference/overlord/apks`에, 추출·복호화·분석 근거는 `reference/overlord`에 보존합니다. `tools/overlord_acquire.py`는 복사와 ZIP CRC/SHA-256 검증을, `tools/overlord_scene_export.py`는 Unity 정적 배칭 범위를 반영한 장면 변환을 수행합니다. 변환기는 `tools/requirements-overlord.txt`의 Python 패키지를 사용합니다. `reference` 원본을 배포 서버로 올리지 않고 로컬에서 작업합니다.
+
+아래의 기존 조운 연무장은 별도로 작성한 실시간 관절 모션을 사용하는 이전 화면입니다.
+
 조운 한 명으로 평지에서 창술을 연습하는 Three.js 앱입니다. Windows에서 Node.js 22.12 이상을 설치한 뒤 `run-practice.bat`를 실행하면 브라우저가 열립니다. 터미널에서는 `npm ci`, `npm run dev`를 사용합니다. 배포용 정적 사이트는 `npm run build`로 생성합니다.
 
 ## 조작

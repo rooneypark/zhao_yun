@@ -1,0 +1,4 @@
+UnityPy==1.25.4
+numpy>=1.26,<3
+cryptography==49.0.0
+protobuf==6.31.1

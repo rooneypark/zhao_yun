@@ -2,3 +2,11 @@ node_modules/
 dist/
 
 /reference/*.apk
+/reference/overlord/apks/
+/reference/overlord/extracted/
+/reference/overlord/decoded/
+/reference/overlord/tooling/
+__pycache__/
+
+# Runtime assets are distributed with the GitHub release.
+/public/overlord/
