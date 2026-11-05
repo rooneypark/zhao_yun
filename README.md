@@ -2,7 +2,7 @@
 
 ## 오버로드 원본 리소스 연구실
 
-처음 설치할 때는 [실행 리소스 릴리스](https://github.com/rooneypark/zhao_yun/releases/tag/overlord-assets-v1)에서 **overlord-maps.zip**과 **overlord-motion.zip**을 모두 받아 이 저장소의 최상위 폴더에 압축을 풉니다. 두 ZIP은 같은 `public/overlord/` 폴더 아래에 서로 다른 파일을 추가합니다. 압축을 푼 뒤 `run-overlord.bat`를 실행하세요.
+처음 설치할 때는 저장소를 받은 뒤 `run-overlord.bat`를 실행하세요. 실행기가 [릴리스](https://github.com/rooneypark/zhao_yun/releases/tag/overlord-assets-v1)에서 필요한 ZIP을 내려받아 SHA-256을 확인한 뒤 누락된 파일을 `public/overlord/`에 복원합니다.
 
 `run-overlord.bat`를 실행하거나 개발 서버의 `/overlord.html`을 여세요. 맵의 원본 메시·지형·배치와 캐릭터의 원본 스킨·애니메이션을 검사하고, 장면 편집과 모션 재생 목록을 저장할 수 있습니다. 화면과 확보 범위는 [연구실 안내](src/overlord/README.md)에 설명되어 있습니다.
 
