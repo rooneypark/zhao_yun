@@ -1,0 +1,1 @@
+{"name":"zhao-yun-training","private":true,"type":"module","scripts":{"dev":"vite --host 127.0.0.1","build":"vite build","preview":"vite preview"},"dependencies":{"three":"0.180.0"},"devDependencies":{"vite":"7.3.1"}}
