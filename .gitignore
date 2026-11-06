@@ -10,3 +10,8 @@ __pycache__/
 
 # Runtime assets are distributed with the GitHub release.
 /public/overlord/
+
+# Retired design drafts and generated review outputs stay local.
+/discarded-designs/
+/previews/
+/zhao-yun-modeling-set-v1.zip

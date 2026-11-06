@@ -1,5 +1,7 @@
 # 조운전 · 창술 연무장
 
+현재 제작 방향은 [제작 방향 기록](DESIGN_DIRECTION.md)을 기준으로 합니다. **Tripo로 캐주얼 조운 외형을 생성하고, Blender에서 진삼국무쌍 오버로드 장수 모션을 새 체형에 적용**할 계획입니다. [최종 모델링 시안](zhao-yun-modeling-set-v1/)에는 캐릭터 4방향·창·망토 6장만 보관합니다.
+
 ## 오버로드 원본 리소스 연구실
 
 처음 설치할 때는 저장소를 받은 뒤 `run-overlord.bat`를 실행하세요. 실행기가 [릴리스](https://github.com/rooneypark/zhao_yun/releases/tag/overlord-assets-v1)에서 필요한 ZIP을 내려받아 SHA-256을 확인한 뒤 누락된 파일을 `public/overlord/`에 복원합니다.
@@ -33,7 +35,7 @@ J와 K는 누른 횟수마다 한 번씩 입력됩니다. 공격 도중 다음 �
 
 - `public/assets/hero`, `weapon` — 실행 시 불러오는 리깅 본체, 별도 창 GLB
 - `source-art/models` — 고해상도 원본과 리깅 전 리토폴로지 모델
-- `tripo-model-references-v2` — Tripo 입력용 조운·망토·창 기준 이미지
+- `zhao-yun-modeling-set-v1` — 최종 확정 캐릭터 4방향·창·망토 시안
 - `src/moves.js` — 삼국히어로즈 웹 프로토타입의 조운 전용 공격·차지·스킬·난무 데이터
 - `src/main.js` — 입력 예약, 연계, 전진, 재사용 시간, 연무장 진행
 - `src/rig.js` — 실시간 전신 포즈, 양손 그립, 다리 관절 풀이
@@ -43,4 +45,4 @@ J와 K는 누른 횟수마다 한 번씩 입력됩니다. 공격 도중 다음 �
 
 동작 참고: [조운 용창 커뮤니티 기술표](https://koeitecmo.wiki/wiki/Zhao_Yun_(Dynasty_Warriors)/Movesets), [용창 운용 분석](https://www.bilibili.com/read/cv22534134/). 이 프로젝트의 입력·기술 시간에 맞춰 별도로 작성한 실시간 관절 애니메이션입니다.
 
-달리기 자세는 삼국히어로즈의 [양손 창 5방향 A·B 원화](source-art/motion/two-hand-run/preview.png)를 기준으로 합니다. 오른손은 골반 옆에서 창대를 밀고, 왼손은 가슴 앞에서 방향을 잡습니다. [측면 13컷](source-art/motion/two-hand-run/sequence-13.png)은 발을 밀고 접은 뒤 다시 딛는 박자에 사용했습니다. [원화·수정 전·수정 후 비교표](previews/run-grip-review.jpg)와 [방향 전환 비교 영상](previews/run-grip-comparison.mp4)에서 확인할 수 있습니다.
+기존 연무장의 달리기 원화와 비교 영상은 이전 작업 자료로 폐기 보관했습니다. 새 캐릭터의 모션 기준은 위 제작 방향 문서의 오버로드 모션 적용 계획입니다.
